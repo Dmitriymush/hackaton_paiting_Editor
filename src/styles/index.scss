@@ -1,0 +1,46 @@
+@import "resset";
+
+#canvas {
+  display: block;
+  cursor: all-scroll;
+}
+
+.tools {
+  position: absolute;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 650px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  padding: 30px;
+  color: white;
+  transform: translateY(-215px);
+  transition: transform 1s;
+
+  &__icon {
+    height: 30px;
+    width: 30px;
+    transform: translateY(67px);
+    transition: transform 1s;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__inputs {
+    background-color: peru;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-radius: 20px;
+    opacity: 0.8;
+    padding: 10px;
+  }
+}
+
